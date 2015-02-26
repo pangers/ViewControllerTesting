@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1A21714A1A9EA59800E16D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2171491A9EA59800E16D94 /* AppDelegate.swift */; };
-		1A21714C1A9EA59800E16D94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A21714B1A9EA59800E16D94 /* ViewController.swift */; };
 		1A21714F1A9EA59800E16D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A21714D1A9EA59800E16D94 /* Main.storyboard */; };
 		1A2171511A9EA59800E16D94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2171501A9EA59800E16D94 /* Images.xcassets */; };
 		1A2171541A9EA59800E16D94 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A2171521A9EA59800E16D94 /* LaunchScreen.xib */; };
-		1A2171601A9EA59800E16D94 /* ViewControllerTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A21715F1A9EA59800E16D94 /* ViewControllerTestingTests.swift */; };
+		1A21716A1A9EA6C900E16D94 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2171691A9EA6C900E16D94 /* FirstViewController.swift */; };
+		1A21716D1A9EA6E800E16D94 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A21716C1A9EA6E800E16D94 /* SecondViewController.swift */; };
+		1A2171701A9EA71F00E16D94 /* FirstViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A21716F1A9EA71F00E16D94 /* FirstViewControllerTests.swift */; };
+		1ACEEED81A9EAAA2007E63A6 /* SecondViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACEEED71A9EAAA2007E63A6 /* SecondViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +31,15 @@
 		1A2171441A9EA59800E16D94 /* ViewControllerTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewControllerTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A2171481A9EA59800E16D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A2171491A9EA59800E16D94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A21714B1A9EA59800E16D94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A21714E1A9EA59800E16D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A2171501A9EA59800E16D94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1A2171531A9EA59800E16D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1A2171591A9EA59800E16D94 /* ViewControllerTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewControllerTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A21715E1A9EA59800E16D94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A21715F1A9EA59800E16D94 /* ViewControllerTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTestingTests.swift; sourceTree = "<group>"; };
+		1A2171691A9EA6C900E16D94 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = ../FirstViewController.swift; sourceTree = "<group>"; };
+		1A21716C1A9EA6E800E16D94 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1A21716F1A9EA71F00E16D94 /* FirstViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewControllerTests.swift; sourceTree = "<group>"; };
+		1ACEEED71A9EAAA2007E63A6 /* SecondViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				1A2171491A9EA59800E16D94 /* AppDelegate.swift */,
-				1A21714B1A9EA59800E16D94 /* ViewController.swift */,
 				1A21714D1A9EA59800E16D94 /* Main.storyboard */,
+				1A2171691A9EA6C900E16D94 /* FirstViewController.swift */,
+				1A21716C1A9EA6E800E16D94 /* SecondViewController.swift */,
 				1A2171501A9EA59800E16D94 /* Images.xcassets */,
 				1A2171521A9EA59800E16D94 /* LaunchScreen.xib */,
 				1A2171471A9EA59800E16D94 /* Supporting Files */,
@@ -98,8 +103,9 @@
 		1A21715C1A9EA59800E16D94 /* ViewControllerTestingTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A21715F1A9EA59800E16D94 /* ViewControllerTestingTests.swift */,
 				1A21715D1A9EA59800E16D94 /* Supporting Files */,
+				1A21716F1A9EA71F00E16D94 /* FirstViewControllerTests.swift */,
+				1ACEEED71A9EAAA2007E63A6 /* SecondViewControllerTests.swift */,
 			);
 			path = ViewControllerTestingTests;
 			sourceTree = "<group>";
@@ -212,8 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A21714C1A9EA59800E16D94 /* ViewController.swift in Sources */,
+				1A21716D1A9EA6E800E16D94 /* SecondViewController.swift in Sources */,
 				1A21714A1A9EA59800E16D94 /* AppDelegate.swift in Sources */,
+				1A21716A1A9EA6C900E16D94 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A2171601A9EA59800E16D94 /* ViewControllerTestingTests.swift in Sources */,
+				1ACEEED81A9EAAA2007E63A6 /* SecondViewControllerTests.swift in Sources */,
+				1A2171701A9EA71F00E16D94 /* FirstViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = ViewControllerTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = ViewControllerTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -407,6 +417,7 @@
 				1A2171651A9EA59800E16D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A2171661A9EA59800E16D94 /* Build configuration list for PBXNativeTarget "ViewControllerTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +426,7 @@
 				1A2171681A9EA59800E16D94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
