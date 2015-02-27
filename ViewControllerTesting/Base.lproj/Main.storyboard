@@ -7,7 +7,7 @@
         <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="ViewControllerTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="BYZ-38-t0r" customClass="FirstViewController" customModule="ViewControllerTesting" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,7 +44,7 @@
         <!--Second View Controller-->
         <scene sceneID="xZP-CA-3qt">
             <objects>
-                <viewController id="zeX-F7-Kf5" customClass="SecondViewController" customModule="ViewControllerTesting" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="zeX-F7-Kf5" customClass="SecondViewController" customModule="ViewControllerTesting" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7FD-Q3-jUi"/>
                         <viewControllerLayoutGuide type="bottom" id="nuN-iN-2xz"/>

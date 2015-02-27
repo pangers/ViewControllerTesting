@@ -15,12 +15,10 @@ class SecondViewControllerTests: XCTestCase {
     var secondViewController:SecondViewController!
     
     override func setUp() {
-        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
-        let navigationController = storyboard.instantiateInitialViewController() as UINavigationController
-        let firstviewController = navigationController.topViewController as FirstViewController
-        firstviewController.performSegueWithIdentifier("FirstToSecond", sender: nil)
-        secondViewController = navigationController.topViewController as SecondViewController
-        secondViewController.viewDidLoad()
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        secondViewController = storyboard.instantiateViewControllerWithIdentifier("SecondViewController") as SecondViewController
+        let _ = secondViewController.view
     }
     
     func testTextFieldIsBlank() {
