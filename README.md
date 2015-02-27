@@ -19,18 +19,18 @@ However, instantiating the view controller like this ONLY instantiates the view 
     XCTAssertFalse(viewController.navigationController!.navigationBarHidden, "Bar should show by default")
 will result in a nil exception. I confirmed this with
 
-   XCTAssertNil(viewController.navigationController?, "navigation controller doesn't exist")
+    XCTAssertNil(viewController.navigationController?, "navigation controller doesn't exist")
 
 which resulted in a successful test.
 
 Since I wanted to check the state of the navigation bar in FirstViewController, you must instantiate the view controller like so:
 
-   let storyboard = UIStoryboard(name: "Main", bundle: nil)
-   let navigationController = storyboard.instantiateInitialViewController() as UINavigationController
-   viewController = navigationController.topViewController as FirstViewController
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let navigationController = storyboard.instantiateInitialViewController() as UINavigationController
+    viewController = navigationController.topViewController as FirstViewController
 Now performing the test
 
-   XCTAssertFalse(viewController.navigationController!.navigationBarHidden, "nav bar should be showing by default")
+    XCTAssertFalse(viewController.navigationController!.navigationBarHidden, "nav bar should be showing by default")
 results in a successful test.
 
 5) let _ = viewController.view does indeed trigger viewDidLoad() which was confirmed by a test
