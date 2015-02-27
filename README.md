@@ -37,3 +37,36 @@ results in a successful test.
 
 6) let _ = viewController.view does not trigger viewWillAppear(), and I presume anything afterwards aswell. viewController.viewWillAppear(false/true) needs to be called manually to trigger it (Confirmed by a test).
 
+**Update #2**
+
+After all the above, I still could not figure out how to transition from the first view controller to the second view controller (so that I may test navigation bar properties in SecondViewControllerTests.swift). I tried
+
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let nc = storyboard.instantiateInitialViewController() as UINavigationController
+    let firstVC = nc.topViewController as FirstViewController
+    firstVC.performSegueWithIdentifier("FirstToSecond", sender: nil)
+    secondVC = nc.topViewController as SecondViewController
+
+which caused an error.
+
+I also tried 
+
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let nc = storyboard.instantiateInitialViewController() as UINavigationController
+    let firstVC = nc.topViewController as FirstViewController
+    firstVC.toSecondVCButton.sendActionsForControlEvents(UIControlEvents.TouchUpInside)
+    secondVC = nc.topViewController as SecondViewController
+
+which did not work.
+
+I eventually tried 
+
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let nc = storyboard.instantiateInitialViewController() as UINavigationController
+    vc = storyboard.instantiateViewControllerWithIdentifier("Second") as SecondViewController
+    nc.pushViewController(vc, animated: false)
+    let _ = vc.view
+    vc.viewWillAppear(false)
+
+which worked perfectly with my tests (allowed me to access navigation bar properties)!
+
