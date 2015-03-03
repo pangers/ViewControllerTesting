@@ -70,3 +70,4 @@ I eventually tried
 
 which worked perfectly with my tests (allowed me to access navigation bar properties)!
 
+I have summarised these points in my blog, http://www.pangers.com/blog/2015/3/2/unit-testing-view-controllers
